@@ -19,6 +19,7 @@ describe('<Counter />', () => {
     await user.click(decreaseBtn)
     await user.click(decreaseBtn)
 
+    // getByText: chạy đồng bộ (synchronous) dùng khi chắc chắn element sẽ có trong DOM
     expect(screen.getByText(/count: 0/i)).toBeInTheDocument()
   })
 })
